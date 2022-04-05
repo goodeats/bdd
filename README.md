@@ -35,7 +35,12 @@ Write tests before code
 
 ## Tools
 
-[Chai](https://www.chaijs.com/)
+### [Chai](https://www.chaijs.com/)
 Chai is a BDD / TDD assertion library for node and the browser that can be delightfully paired with any javascript testing framework.
 
 Lots of expectation/assertion helpers.
+
+### [Mocha](https://mochajs.org/)
+Mocha is a feature-rich JavaScript test framework running on Node.js and in the browser, making asynchronous testing simple and fun.
+
+(btw I'm  really glad tests can be delightful and fun)

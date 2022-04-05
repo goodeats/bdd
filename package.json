@@ -4,11 +4,12 @@
   "description": "Tests describe the expected behaviour of the application",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "author": "Pat Needham <patrick.h.needham@gmail.com> (https://patneedham.me/)",
   "license": "ISC",
   "devDependencies": {
-    "chai": "^4.3.6"
+    "chai": "^4.3.6",
+    "mocha": "^9.2.2"
   }
 }

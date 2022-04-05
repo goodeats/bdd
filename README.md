@@ -2,6 +2,9 @@
 
 Tests describe the expected behaviour of the application
 
+Followed along here:
+[Intro To JavaScript Unit Testing & BDD (2 Hour+ Course)](https://www.youtube.com/watch?v=u5cLK1UrFyQ&t=0s)
+
 ## Types of tests
 
 ### Unit testing
@@ -30,3 +33,9 @@ Write tests before code
 - improve the passing code
 - repeat
 
+## Tools
+
+[Chai](https://www.chaijs.com/)
+Chai is a BDD / TDD assertion library for node and the browser that can be delightfully paired with any javascript testing framework.
+
+Lots of expectation/assertion helpers.

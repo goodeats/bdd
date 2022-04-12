@@ -60,6 +60,14 @@ describe('checkForShip', function () {
             [1, 1],
           ],
         },
+        {
+          locations: [
+            [2, 0],
+            [2, 1],
+            [2, 3],
+            [2, 4],
+          ],
+        },
       ],
     };
 
@@ -67,6 +75,7 @@ describe('checkForShip', function () {
     expect(checkForShip(player, [0, 0])).to.be.true;
     expect(checkForShip(player, [1, 0])).to.be.true;
     expect(checkForShip(player, [1, 1])).to.be.true;
+    expect(checkForShip(player, [2, 3])).to.be.true;
     expect(checkForShip(player, [9, 9])).to.be.false;
   });
 });

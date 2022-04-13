@@ -20,5 +20,27 @@ describe('GAME INSTANCE FUNCTIONS', () => {
     });
   });
 
-  it('some other stuff', function () {});
+  describe('takeTurn', () => {
+    var takeTurn = require('../game_logic/game_instance').takeTurn;
+    var guess, player;
+
+    beforeEach(function () {
+      guess = function () {
+        return [0, 0];
+      };
+      player = {
+        ships: [
+          {
+            locations: [[0, 0]],
+            damage: [],
+          },
+        ],
+      };
+    });
+
+    it('should return false if the game ends', function () {
+      var actual = takeTurn(player, guess);
+      expect(actual).to.be.false;
+    });
+  });
 });

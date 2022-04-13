@@ -42,5 +42,23 @@ describe('GAME INSTANCE FUNCTIONS', () => {
       var actual = takeTurn(player, guess);
       expect(actual).to.be.false;
     });
+
+    // testing async function
+    function saveGame(callback) {
+      setTimeout(function () {
+        callback();
+      }, 1000);
+    }
+
+    describe('saveGame', () => {
+      it('should update save status', (done) => {
+        var status = 'game not saved....';
+        saveGame(function () {
+          status = 'game saved!';
+          expect(status).to.equal('game saved!');
+          done();
+        });
+      });
+    });
   });
 });

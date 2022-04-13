@@ -1,3 +1,5 @@
+const { after, afterEach } = require('mocha');
+
 var expect = require('chai').expect;
 
 describe('checkForShip', function () {
@@ -102,6 +104,14 @@ describe('fire', function () {
         },
       ],
     };
+  });
+
+  after(function () {
+    console.log('entire test suite completed');
+  });
+
+  afterEach(function () {
+    console.log('unit test completed');
   });
 
   it('should record damage on the given players ship at a given coordiate', () => {

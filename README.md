@@ -44,3 +44,12 @@ Lots of expectation/assertion helpers.
 Mocha is a feature-rich JavaScript test framework running on Node.js and in the browser, making asynchronous testing simple and fun.
 
 (btw I'm  really glad tests can be delightful and fun)
+
+### [Sinon](https://sinonjs.org/)
+Sinon is used for adding mocks and stubs to unit testing frameworks. I may invest time in exploring this on a real project.
+
+### [Istanbul](https://istanbul.js.org/)
+Test coverage tool to check quality of tests. Good run-down of the benefits of test coverage [here](https://www.guru99.com/test-coverage-in-software-testing.html).
+
+## Takeaway
+Testing is a very important part of production software to ensure new features don't break old ones. I'm glad to get some practice writing tests here to compare with tests I have written in Ruby on Rails.

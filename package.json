@@ -4,7 +4,8 @@
   "description": "Tests describe the expected behaviour of the application",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "mocha --reporter list",
+    "test:watch": "mocha --watch ./test ./ --reporter min",
     "coverage": "nyc npm run test"
   },
   "author": "Pat Needham <patrick.h.needham@gmail.com> (https://patneedham.me/)",
